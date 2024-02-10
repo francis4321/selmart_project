@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Option</title>
+    <link rel="stylesheet" href="./paymentOpt.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <div class="nav-sec1">
+                <img src="./icons/selmart-logo.png" alt="">
+                <p><span>Sel</span>mart</p>
+            </div>
+            <div class="nav-sec2">
+                <a href="./landingPage.html">Home</a>
+                <a href="#">Shop</a>
+                <a href="./catergoriesPages.html">Categories</a>
+                <a href="#">Deals</a>
+            </div>
+            <div class="nav-sec3">
+                <div class="search-box">
+                    <input type="text">
+                    <button><a href="./searchItem.html">Search</a></button>
+                </div>
+                <div class="info">
+                    <div class="account">
+                        <img src="./icons/account-logo.png" alt="">
+                        <a href="./accountMgt.html">Account</a>
+                    </div>
+                    <div class="support">
+                        <img src="./icons/support-logo.png" alt="">
+                        <a href="./support.html">Support</a>
+                    </div>
+                    <div class="cart">
+                        <img src="./icons/cart-logo.png" alt=""><a href="./cart.html">Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="checkout">
+            <h2>Checkout</h2>
+        </div>
+        <hr>
+        <div class="checkout-btns">
+            <div class="pay-opt-btn">
+                <button class="active-checkout-btn" id="payment-btn"></button>
+                <p>Payment Options</p>
+            </div>
+            <div class="deli-info-btn">
+                <button id="delivery-btn"></button>
+                <p>Delivery Information</p>
+            </div>
+            <div class="review-btn">
+                <button id="review-conf-btn"></button>
+                <p>Review & Confirmation</p>
+            </div>
+        </div>
+
+        <div class="payment-opt-container">
+            <div class="payment-options">
+                <h1>Payment Options</h1>
+                <div class="payment-mode">
+                    <div><img src="./icons/credit-card-icon.png" alt="" id="active-pay-mode"><p>Credit Card</p></div>
+                    <div><img src="./icons/icons8_paypal.png" alt=""><p>Paypal</p></div>
+                    <div><img src="./icons/momo-icon.png" alt=""><p>Mobile Money</p></div>
+                    <div><img src="./icons/cash-icon.png" alt=""><p>Cash on delivery</p></div>
+                </div>
+                <form action="">
+                    <div class="heading">
+                        <img src="./icons/mingcute_warning-line.png" alt="">
+                        <h4>Card Info</h4>
+                    </div>
+                    <input type="text" placeholder="Name on card">
+                    <input type="tel" placeholder="Card number">
+                    <div>
+                        <span><input type="tel" placeholder="CVV number"></span>
+                        <span>
+                            <input type="text" placeholder="Exp Month"><img src="./icons/exp-icon.png" alt="">
+                        </span>
+                        <span>
+                            <input type="text" placeholder="Exp Day"><img src="./icons/exp-icon.png" alt="">
+                        </span>
+                    </div>
+                    <button>Continue</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="delivery-info-container">
+            <div class="delivery-info">
+                <h1>Delivery Information</h1>
+                <form action="">
+                    <div class="heading">
+                        <img src="./icons/mingcute_warning-line.png" alt="">
+                        <h4>Billing Address</h4>
+                    </div>
+                    <input type="text" placeholder="Full Name">
+                    <input type="text" placeholder="Address 1">
+                    <input type="text" placeholder="Address 2">
+                    <div>
+                        <span><input type="text" placeholder="City"></span>
+                        <span>
+                            <input type="tel" placeholder="Telephone">
+                        </span>
+                    </div>
+                    <button>Continue</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="review-container">
+            <div class="heading">
+                <h1>Review & Confirmation</h1>
+            </div>
+
+            <div class="product-details">
+                <div class="product-pic">
+                    <img src="./images/beverages.png" alt="">
+                </div>
+                <div class="product-info">
+                    <div class="heading">
+                        <img src="./icons/charm_circle-tick.png" alt="">
+                        <h3>Product Detail</h3>
+                    </div>
+                    <div class="product-info-list">
+                        <div id=""><p>Item Name</p><span>Fresh Mixed Berries</span></div>
+                        <div id="discount"><p>Discount</p><span>(60%) - GH₵ 5.44</span></div>
+                        <div id=""><p>Quantity</p><span>1</span></div>
+                        <div id="delivery"><p>Delivery</p><span>GH₵ 0.00</span></div>
+                        <div id="taxes"><p>Taxes</p><span>+ GH₵ 2.50</span></div>
+                        <div id="total"><p>Total</p><span>+ GH₵ 20</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="delivery-details">
+                <div class="date-of-arrival">
+                    <img src="./icons/carbon_delivery.png" alt="">
+                    <p>Estimated Date of arrival<br><span>September 25 -  September 26th</span></p>
+                </div>
+                <div class="delivery-information">
+                    <div class="heading">
+                        <img src="./icons/charm_circle-tick.png" alt="">
+                        <h3>Delivery Info</h3>
+                    </div>
+                    <div class="delivery-information-list">
+                        <div>
+                            <span><h5>Name</h5><p>Kojo Kewa Junior</p></span>
+                            <span><h5>Telephone</h5><p>+1 (555) 123-4567</p></span>
+                        </div>
+                        <div>
+                            <span>
+                                <h5>Address 1</h5><p>123 Main Street,Accra Central,<br>Accra,  Ghana</p>
+                            </span>
+                            <span id="city"><h5>City</h5><p>Accra</p></span>
+                        </div>
+                        <div>
+                            <span>
+                                <h5>Address 2</h5><p>123 Main Street,Accra Central,<br>Accra,  Ghana</p>
+                            </span>
+                            <span><h5>Delivery Date</h5><p>25th Sept 2023</p></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-info-container">
+                <div class="card-info">
+                    <div class="heading">
+                        <img src="./icons/charm_circle-tick.png" alt="">
+                        <h3>Card Info</h3>
+                    </div>
+                    <div class="card-info-list">
+                        <div>
+                            <span><h5>Name on Card</h5><p>Kojo Kewa Junior</p></span>
+                            <span><h5>Card Number</h5><p>4111 1111 1111 1111</p></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="conf-order-button">
+                <button id="conf-order-btn">Confirm Order</button>
+            </div>
+            <div class="congrats-pop-up">
+                <img src="./icons/congrats-icon.png" alt="">
+                <h3>Congratulations</h3>
+                <p>Your order has been successfully placed and is on its way to you. Thank You for Choosing Selmart Grocery! </p>
+                <div>
+                    <button id="view-order">View your orders</button>
+                    <button id="cont-shopping">Continue shopping</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="selmart">
+                <div class="selmart-info">
+                    <h2>Selmart</h2>
+                    <p>© 2023 Selmart Grocery.<br>All Rights Reserved.</p>
+                </div>
+                <div class="selmart-socials">
+                    <p>Follow us on</p>
+                    <span>
+                        <a href=""><img src="./icons/logo-facebook.png" alt=""></a>
+                        <a href=""><img src="./icons/LinkdIn-logo.png" alt=""></a>
+                        <a href=""><img src="./icons/twitter-logo.png" alt=""></a>
+                        <a href=""><img src="./icons/logo-instagram.png" alt=""></a>
+                    </span>
+                </div>
+            </div>
+
+            <div class="our-company">
+                <p>Our Company</p>
+                <span>
+                    <a href="">About Us</a>
+                    <a href="">FAQS</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Terms of Service</a>
+                    <a href="">Delivery & Returns</a>
+                </span>
+            </div>
+
+            <div class="contact">
+                <h3>Contact</h3>
+                <address>
+                    123 Main Street,<br>Accra Central,<br>Accra, Ghana.
+                </address>
+                <p>info@selmartgrocery.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+
+            <div class="sel-payment">
+                <h3>Payment Methods</h3>
+                <span>
+                    <a href=""><img src="./icons/fa-solid_mobile.png" alt=""></a>
+                    <a href=""><img src="./icons/ri_mastercard-fill.png" alt=""></a>
+                    <a href=""><img src="./icons/ic_twotone-paypal.png" alt=""></a>
+                </span>
+                <h3>Make Money with us</h3>
+                <a href="">Sell on Selmart</a><br>
+                <a href="">Services Charges</a>
+            </div>
+        </div>
+    </div>
+    <script src="paymentOpt.js"></script>
+</body>
+</html>

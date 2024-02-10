@@ -1,0 +1,246 @@
+@font-face {
+    font-family: Raleway;
+    src: url(./Raleway/Raleway.ttf);
+}
+@font-face {
+    font-family: OpenSans;
+    src: url(./OpenSans/OpenSans.ttf);
+}
+
+:root{
+    --background-color: rgba(247, 247, 247, 1);
+    --primary-color: rgba(0, 0, 0, 1);
+    --secondary-color: rgba(51, 51, 51, 1);
+    --white-color: rgba(255, 255, 255, 1);
+    --green-color: rgba(129, 154, 105, 1);
+    --brown-red-color: rgba(231, 121, 96, 1);
+    --prod-nav-btn-color: rgba(109, 109, 109, 1);
+    --tertiary-color: rgba(51, 51, 51, 0.5);
+    --free-delivery-border: rgba(158, 158, 158, 1);
+    --ash-color: rgba(191, 191, 191, 1);  
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    flex-direction: column;
+    gap: 20px;
+    background: var(--background-color);
+}
+
+.email-heading{
+    width: 37%;
+    margin-bottom: 20px;
+    /* border: 2px solid red; */
+}
+
+.email-heading p{
+    font-family: Raleway;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 800; 
+}
+
+.order-note-container{
+    width: 37%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    background: var(--white-color);
+    /* border: 2px solid red; */
+}
+
+.customer-note{
+    margin: 0 4px 14px 4px;
+    /* border: 2px solid green; */
+}
+
+.customer-note h2{
+    font-family: Raleway;
+    color: var(--green-color);
+    margin-bottom: 10px;
+}
+
+.customer-note p{
+    font-family: OpenSans;
+    font-size: 14px;
+    color: var(--secondary-color);
+    font-weight: 500; 
+}
+
+.order-details{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.order-details h4{
+    font-family: OpenSans;
+}
+
+/* .order-details p{
+    font-family: OpenSans;
+    font-size: 14px;
+    color: var(--secondary-color);
+    font-weight: 500;
+} */
+
+.product-info{
+    width: 100%;
+    padding: 10px 30px;
+    border: 1px solid var(--ash-color);
+}
+
+.product-info .heading{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 7px;
+}
+
+.product-info .heading h3{
+    font-family: Raleway;
+}
+
+.product-info-list > div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+    justify-content: space-between;
+}
+
+.product-info-list > div p{
+    font-family: OpenSans;
+    font-size: 15px;
+    color: var(--prod-nav-btn-color);
+}
+
+.product-info-list > div span{
+    font-family: OpenSans;
+    font-size: 15px; 
+    color: var(--prod-nav-btn-color);
+    margin-top: 10px;
+}
+
+#total p{
+    font-family: Raleway;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+#total span{
+    color: var(--brown-red-color);
+    font-weight: 700;
+}
+
+.delivery-information{
+    width: 100%;
+    padding: 10px 30px;
+    border: 1px solid var(--ash-color);
+}
+
+.delivery-information .heading{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 7px;
+}
+
+.delivery-information .heading h3{
+    font-family: Raleway;
+}
+
+.delivery-information .heading{
+    margin-bottom: 30px;
+}
+
+.delivery-information-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.delivery-information-list > div{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.delivery-information-list > div h5{
+    font-family: Raleway;
+    font-size: 18px;
+}
+
+.delivery-information-list > div p{
+    font-family: OpenSans;
+    color: var(--prod-nav-btn-color);
+    font-size: 15px;
+}
+
+#city{
+    width: 30%;
+    /* border: 2px solid green; */
+}
+
+.date-of-arrival{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    padding: 10px 30px;
+    gap: 20px;
+    border: 1px solid var(--free-delivery-border);
+    font-family: OpenSans;
+}
+
+.date-of-arrival p{
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.date-of-arrival span{
+    font-size: 11px;
+    font-weight: normal;
+    color: var(--prod-nav-btn-color);
+}
+
+.selmart-regards p{
+    font-family: OpenSans;
+    font-size: 14px;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.selmart-copyright{
+    /* border: 2px solid red; */
+    width: 37%;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--white-color);
+    margin-bottom: 20px;
+}
+
+.selmart-copyright p{
+    font-family: OpenSans;
+    font-size: 12px;
+    color: var(--tertiary-color);
+}

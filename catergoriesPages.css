@@ -1,0 +1,624 @@
+@font-face {
+    font-family: Akshar-Regular;
+    src: url(./Akshar/Akshar-Regular.ttf);
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(./Raleway/Raleway.ttf);
+}
+@font-face {
+    font-family: OpenSans;
+    src: url(./OpenSans/OpenSans.ttf);
+}
+
+:root{
+    --background-color: rgba(255, 255, 255, 1);
+    --white-color: rgba(255, 255, 255, 1);
+    --sel-color: rgba(79, 171, 70, 1);
+    --mart-color: rgba(101, 98, 98, 1);
+    --primary-color: rgba(0, 0, 0, 1);
+    --green-color: rgba(129, 154, 105, 1);
+    --brown-red-color: rgba(231, 121, 96, 1);
+    --light-grey-color: rgba(183, 183, 183, 1);
+    --mart-advert-bg-color: rgba(243, 255, 249, 1);
+    --ash-color: rgba(191, 191, 191, 1);
+    --grey-color: rgba(196, 194, 194, 1);
+    --light-ash-color: rgba(247, 247, 247, 1);
+    --search-box-border-color: rgba(210, 210, 210, 1);
+    --product-bg-color: rgba(84, 84, 84, 1);
+    --product-cat-color: rgba(140, 140, 140, 1);
+    --product-btn-border-color: rgba(126, 126, 126, 1);
+    --offer-time-bg-color: rgba(244, 244, 244, 1);
+    --newsletter-text-color: rgba(88, 88, 88, 1);
+    --footer-bg-color: rgba(246, 250, 255, 1);
+    --deep-ash-color: rgba(88, 88, 88, 1);   
+    --prod-nav-btn-color: rgba(109, 109, 109, 1);
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: var(--background-color);
+}
+
+.nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 3px 4px 3px var(--search-box-border-color);
+    padding: 5px 50px;
+}
+
+.nav-sec1{
+    width: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-sec1 p{
+    font-family: Akshar-Regular;
+    font-size: 29.89px;
+    letter-spacing: 2px;
+    color: var(--mart-color);
+}
+
+.nav-sec1 span{
+    color: var(--sel-color);
+}
+
+.nav-sec2{
+    width: 22%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.nav-sec2 a{
+    font-family: Raleway;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 10px;
+}
+
+.nav-sec2 a:hover{
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.nav-sec3{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-box{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border: 2px solid var(--search-box-border-color);
+    border-radius: 40px;
+    font-family: Raleway;
+}
+
+.search-box input{
+    width: 75%;
+    padding: 5px 0;
+    outline: none;
+    border: none;
+}
+
+.search-box button{
+    border-radius: 40px;
+    padding: 8px 20px;
+    border: none;
+    outline: none;
+    background: var(--green-color);
+    font-size: 11.67px;
+}
+
+.search-box button a{
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.info{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+.info > div{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.info a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: Raleway;
+}
+
+.mart-advert{
+    margin: 20px 50px;
+    height: 50vh;
+    background: var(--mart-advert-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.left{
+    width: 60%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 90px;
+    gap: 20px;
+}
+
+.left h1{
+    font-family: Raleway;
+    font-size: 55px;
+}
+
+.left p{
+    font-family: OpenSans;
+    font-size: 22px;
+}
+
+.right{
+    width: 40%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+}
+
+.right img{
+    width: 317px;
+    height: 317px;
+}
+
+.advert-nav-btns{
+    width: 5.7%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    background: var(--mart-advert-bg-color);
+    bottom: 6%;
+    right: 45%;
+}
+
+.advert-nav-btns > div{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--white-color);
+    box-shadow: -1px 4px 2px var(--search-box-border-color);
+}
+
+.advert-nav-btns .active-nav-btn{
+    background: var(--green-color);
+}
+
+.product-nav-box{
+    margin: 20px 50px;
+    background: var(--light-ash-color);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.product-nav-btns{
+    width: 80%;
+    height: inherit;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+}
+
+.product-nav-btns button{
+    font-family: OpenSans;
+    font-size: 18px;
+    border-radius: 47px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    background: var(--white-color);
+    color: var(--prod-nav-btn-color);
+}
+
+.product-nav-btns .active-prod-nav-btn{
+    background: var(--green-color);
+    color: var(--white-color);
+    padding: 5px 15px;
+}
+
+.sort-by button{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: OpenSans;
+    font-size: 18px;
+    border-radius: 47px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    background: var(--white-color);
+    color: var(--prod-nav-btn-color);
+}
+
+.fresh-product-container{
+    margin: 90px 50px 0 50px;
+    /* border: 2px solid red; */
+}
+
+.pp-heading{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.pp-heading h3{
+    font-family: Raleway;
+    font-weight: 700;
+}
+
+.pp-heading p{
+    font-family: OpenSans;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--prod-nav-btn-color);
+}
+
+.popular-products{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.popular-products > div{
+    width: 32%;
+    min-height: 10vh;
+    padding: 20px;
+    /* border: 2px solid green; */
+    padding: 35px;
+    box-shadow: 0px 3px 3px 3px var(--search-box-border-color);
+}
+
+.prod-pic{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: var(--light-ash-color);
+    position: relative;
+}
+
+#meat{
+    width: 212px;
+    height: 212px;
+}
+
+.prod-pic span{
+    position: absolute;
+    top: 8%;
+    right: 8%;
+}
+
+.prod-info{
+    margin-top: 10px;
+    font-family: Raleway;
+}
+
+#prod-cat{
+    font-size: 14px;
+    color: var(--product-cat-color);
+}
+
+#prod-name{
+    font-size: 22px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.prod-price{
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    margin-top: 20px;
+    font-family: OpenSans;
+}
+
+.prod-price p{
+    font-size: 30px;
+    color: var(--brown-red-color);
+    font-weight: 700;
+}
+
+.prod-price span{
+    font-size: 20px;
+    color: var(--ash-color);
+}
+
+.popular-products button{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    border-radius: 15px;
+    border: 1px solid var(--product-btn-border-color);
+    outline: none;
+    background: none;
+    font-family: OpenSans;
+    font-size: 16px;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.viewed-items{
+    margin: 100px 50px 10px 50px;
+    /* border: 2px solid red; */
+}
+
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+.top-bar .heading{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    height: inherit;
+}
+
+.heading h2{
+    font-family: Raleway;
+    font-weight: 700;
+}
+
+.browse-arrows{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    width: 7%;
+}
+
+.browse-arrows > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+}
+
+#active{
+    background: var(--green-color);
+    border: none;
+}
+
+.viewed-items-prod{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.viewed-items-prod > div{
+    width: 32%;
+    min-height: 10vh;
+    padding: 20px;
+    /* border: 2px solid green; */
+    padding: 35px;
+    box-shadow: 0px 3px 3px 3px var(--search-box-border-color);
+    position: relative;
+}
+
+.discount-ind{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -11%;
+    top: -4%;
+    padding: 7px 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: var(--brown-red-color);
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.viewed-items-prod .prod-pic{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: var(--light-ash-color);
+    position: relative;
+}
+
+.viewed-items-prod .prod-pic span{
+    position: absolute;
+    top: 8%;
+    right: 8%;
+}
+
+.viewed-items-prod .prod-info{
+    margin-top: 10px;
+    font-family: Raleway;
+}
+
+.viewed-items-prod #prod-cat{
+    font-size: 14px;
+    color: var(--product-cat-color);
+}
+
+.viewed-items-prod #prod-name{
+    font-size: 22px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.viewed-items .prod-price{
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    margin-top: 20px;
+    font-family: OpenSans;
+}
+
+.viewed-items-prod .prod-price p{
+    font-size: 30px;
+    color: var(--brown-red-color);
+    font-weight: 700;
+}
+
+.viewed-items-prod .prod-price span{
+    font-size: 20px;
+    color: var(--ash-color);
+}
+
+.viewed-items-prod button{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    border-radius: 15px;
+    border: 1px solid var(--product-btn-border-color);
+    outline: none;
+    background: none;
+    font-family: OpenSans;
+    font-size: 16px;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.footer{
+    margin-top: 80px;
+    background: var(--footer-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.selmart-info h2{
+    font-family: Raleway;
+}
+
+.selmart-info p{
+    margin-top: 10px;
+    font-family: OpenSans;
+    font-size: 12px;
+    color: var(--deep-ash-color);
+}
+
+.selmart-socials p{
+    margin-top: 20px;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+.selmart-socials img{
+    width: 20px;
+    height: 20px;
+}
+
+.selmart-socials span{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.our-company p{
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 900;
+    color: var(--primary-color);
+}
+
+.our-company span{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.our-company span a{
+    text-decoration: none;
+    color: var(--deep-ash-color);
+    font-family: OpenSans;
+    font-size: 13px;
+}
+
+.contact h3{
+    font-family: Raleway;
+    font-weight: 900;
+}
+
+.contact address, p{
+    margin-top: 10px;
+    color: var(--deep-ash-color);
+    font-family: OpenSans;
+    font-size: 13px;
+}
+
+.sel-payment h3{
+    font-family: Raleway;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.sel-payment span{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sel-payment a{
+    text-decoration: none;
+    color: var(--deep-ash-color);
+    font-family: OpenSans;
+    font-size: 13px;
+}

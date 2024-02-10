@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selmart</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Search Item</title>
+    <link rel="stylesheet" href="./searchItem.css">
 </head>
 <body>
     <div class="container">
@@ -14,134 +14,73 @@
                 <p><span>Sel</span>mart</p>
             </div>
             <div class="nav-sec2">
-                <a href="#">Home</a>
+                <a href="./landingPage.html">Home</a>
                 <a href="#">Shop</a>
-                <a href="#">Categories</a>
+                <a href="./catergoriesPages.html">Categories</a>
                 <a href="#">Deals</a>
             </div>
             <div class="nav-sec3">
                 <div class="search-box">
                     <input type="text">
-                    <button>Search</button>
+                    <button><a href="./searchItem.html">Search</a></button>
                 </div>
                 <div class="info">
                     <div class="account">
                         <img src="./icons/account-logo.png" alt="">
-                        <a href="#">Account</a>
+                        <a href="./accountMgt.html">Account</a>
                     </div>
                     <div class="support">
                         <img src="./icons/support-logo.png" alt="">
-                        <a href="#">Support</a>
+                        <a href="./support.html">Support</a>
                     </div>
                     <div class="cart">
-                        <img src="./icons/cart-logo.png" alt=""><a href="#">Cart</a>
+                        <img src="./icons/cart-logo.png" alt=""><a href="./cart.html">Cart</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="explore-product">
+        <div class="mart-advert">
             <div class="left">
-                <p>Save up to 30% cash</p>
-                <h1>Groceries Made<br>Fresh and Easy</h1>
-                <span>Welcome to Selmart. Browse a Wide Selection<br>of Fresh Produce, Pantry Staples, and More.</span>
-                <button>Explore Product<img src="./icons/Arrow 3.png" alt=""></button>
+                <h1>Fresh Ingredients, Fresh<br>Ideas, Fresh Start</h1>
+                <p>Begin Every Day with Fresh Inspiration</p>
             </div>
             <div class="right">
-                <div class="picture">
-                    <img src="./images/lady-1.png" alt="">
-                </div>
-                <div class="deliver-container">
-                    <div class="deliver">
-                        <p>Deliver</p>
-                        <div class="fast">
-                            fast
-                        </div>
-                    </div>
-                </div>
-                <div class="discount-container">
-                    <div class="discount">
-                        <p>Discount</p>
-                        <div class="percentage">
-                            30%
-                        </div>
-                    </div>
-                </div>
+                <img src="./images/advert-pic 2.png" alt="">
+            </div>
+            <div class="advert-nav-btns">
+                <div></div>
+                <div class="active-nav-btn"></div>
+                <div></div>
             </div>
         </div>
 
-        <div class="hotest-categories">
-            <div class="heading">
-                <h2>Browse our hotest Categories</h2>
-                <div class="browse-arrows">
-                    <div class="back-arrow">
-                        <img src="./icons/back-arrow.png" alt="">
-                    </div>
-                    <div class="forward-arrow" id="active">
-                        <img src="./icons/forward-arrow.png" alt="">
-                    </div>
-                </div>
+        <div class="product-nav-box">
+            <div class="product-nav-btns">
+                <button class="active-prod-nav-btn">All</button>
+                <button>Diary and Eggs</button>
+                <button>Beverages</button>
+                <button>Fresh Produce</button>
+                <button>Meat and Sea food</button>
+                <button>Frozen foods</button>
+                <img src="./icons/right arrow.png" alt="">
             </div>
-
-            <div class="categories">
-                <div><img src="./images/dairy&egg.png" alt=""><p>Dairy and Eggs</p></div>
-                <div><img src="./images/fresh-product.png" alt=""><p>Fresh Product</p></div>
-                <div><img src="./images/beverages.png" alt=""><p>Beverages</p></div>
-                <div><img src="./images/frozen-foods.png" alt=""><p>Frozen Foods</p></div>
-                <div><img src="./images/meat&sea-food.png" alt=""><p>Meat and Sea Foods</p></div>
+            <div class="sort-by">
+                <button>Sort By<img src="./icons/down-arrow.png" alt=""></button>
             </div>
         </div>
 
         <div class="popular-products-container">
             <div class="pp-heading">
-                <h2>Checkout our Popular Products</h2>
+                <h3>Search Results</h3>
+                <p>total: <span>23</span></p>
             </div>
             <div class="popular-products">
                 <div>
                     <div class="prod-pic">
-                        <img src="./images/frozen-foods.png" alt="">
-                        <span><img src="./icons/heart-logo.png" alt=""></span>
-                    </div>
-                    <div class="prod-info">
-                        <p id="prod-cat">Meat and Seafood</p>
-                        <p id="prod-name">Frozen Vegetable pack</p>
-                    </div>
-                    <div class="prod-price">
-                        <p>GH₵ 25.44</p> <span>GH₵ 55.44</span>
-                    </div>
-                    <button>Add to Cart <img src="./icons/cart-logo.png" alt=""></button>
-                </div>
-                <div>
-                    <div class="prod-pic">
-                        <img src="./images/beverages.png" alt="">
-                        <span><img src="./icons/heart-logo.png" alt=""></span>
-                    </div>
-                    <div class="prod-info">
-                        <p id="prod-cat">Beverages</p>
-                        <p id="prod-name">Sparkling Water (12-pack)</p>
-                    </div>
-                    <div class="prod-price">
-                        <p>GH₵ 25.44</p> <span>GH₵ 55.44</span>
-                    </div>
-                    <button>Add to Cart <img src="./icons/cart-logo.png" alt=""></button>
-                </div>
-                <div>
-                    <div class="prod-pic">
-                        <img src="./images/fresh-product.png" alt="">
-                        <span><img src="./icons/heart-logo.png" alt=""></span>
-                    </div>
-                    <div class="prod-info">
-                        <p id="prod-cat">Fresh Produce</p>
-                        <p id="prod-name">Fresh Apples</p>
-                    </div>
-                    <div class="prod-price">
-                        <p>GH₵ 25.44</p> <span>GH₵ 55.44</span>
-                    </div>
-                    <button>Add to Cart <img src="./icons/cart-logo.png" alt=""></button>
-                </div>
-                <div>
-                    <div class="prod-pic">
-                        <img src="./images/dairy&egg.png" alt="">
+                        <div class="prod-picture">
+                            <img src="./images/dairy&egg.png" alt="">
+                        </div>
                         <span><img src="./icons/heart-logo.png" alt=""></span>
                     </div>
                     <div class="prod-info">
@@ -155,7 +94,9 @@
                 </div>
                 <div>
                     <div class="prod-pic">
-                        <img src="./images/fresh-product.png" alt="">
+                        <div class="prod-picture">
+                            <img src="./images/fresh-product.png" alt="">
+                        </div>
                         <span><img src="./icons/heart-logo.png" alt=""></span>
                     </div>
                     <div class="prod-info">
@@ -169,7 +110,9 @@
                 </div>
                 <div>
                     <div class="prod-pic">
-                        <img src="./images/meat&sea-food.png" id="meat" alt="">
+                        <div class="prod-picture">
+                            <img src="./images/meat&sea-food.png" alt="" id="meat">
+                        </div>
                         <span><img src="./icons/heart-logo.png" alt=""></span>
                     </div>
                     <div class="prod-info">
@@ -181,50 +124,61 @@
                     </div>
                     <button>Add to Cart <img src="./icons/cart-logo.png" alt=""></button>
                 </div>
+                <div>
+                    <div class="prod-pic">
+                        <div class="prod-picture">
+                            <img src="./images/meat&sea-food.png" alt="" id="meat">
+                        </div>
+                        <span><img src="./icons/heart-logo.png" alt=""></span>
+                    </div>
+                    <div class="prod-info">
+                        <p id="prod-cat">Meat and Seafood</p>
+                        <p id="prod-name">Organic Chicken Breast</p>
+                    </div>
+                    <div class="prod-price">
+                        <p>GH₵ 25.44</p> <span>GH₵ 55.44</span>
+                    </div>
+                    <button>Add to Cart <img src="./icons/cart-logo.png" alt=""></button>
+                </div>
+                <div>
+                    <div class="prod-pic">
+                        <div class="prod-picture">
+                            <img src="./images/dairy&egg.png" alt="">
+                        </div>
+                        <span><img src="./icons/heart-logo.png" alt=""></span>
+                    </div>
+                    <div class="prod-info">
+                        <p id="prod-cat">Dairy and Eggs</p>
+                        <p id="prod-name">Colby Jack Cheese (8 oz)</p>
+                    </div>
+                    <div class="prod-price">
+                        <p>GH₵ 25.44</p> <span>GH₵ 55.44</span>
+                    </div>
+                    <button>Add to Cart <img src="./icons/cart-logo.png" alt=""></button>
+                </div>
+                <div>
+                    <div class="prod-pic">
+                        <div class="prod-picture">
+                            <img src="./images/fresh-product.png" id="meat" alt="">
+                        </div>
+                        <span><img src="./icons/heart-logo.png" alt=""></span>
+                    </div>
+                    <div class="prod-info">
+                        <p id="prod-cat">Fresh Produce</p>
+                        <p id="prod-name">Fresh Mixed Berries</p>
+                    </div>
+                    <div class="prod-price">
+                        <p>GH₵ 25.44</p> <span>GH₵ 55.44</span>
+                    </div>
+                    <button>Add to Cart <img src="./icons/cart-logo.png" alt=""></button>
+                </div>
             </div>
         </div>
 
-        <div class="purchase-product">
-            <div class="left">
-                <img src="./icons/Vector (2).png" alt="" id="vector">
-                <div class="picture">
-                    <img src="./images/lady-2.png" alt="">
-                </div>
-                <div class="deliver-container">
-                    <div class="deliver">
-                        <p>Delivery</p>
-                        <div class="fast">
-                            fast
-                        </div>
-                    </div>
-                </div>
-                <div class="discount-container">
-                    <div class="discount">
-                        <p>Discount</p>
-                        <div class="percentage">
-                            30%
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="right">
-                <h1>Get 30% off this week for<br>purchases above $50</h1>
-                <p>What are you waiting, browse through our hotest<br>category and purchase your healthy groceries<br>from Selmart.</p>
-                <button>Shop Now<img src="./icons/Arrow 3.png" alt=""></button>
-            </div>
-        </div>
-
-        <div class="fash-sales">
+        <div class="similar-items">
             <div class="top-bar">
                 <div class="heading">
-                    <h2>Flash Sales</h2>
-                </div>
-                <div class="offer-time">
-                    <p id="offer-info">Hurry up! Offer ends in</p>
-                    <div><p>7</p><span>DAYS</span></div> :
-                    <div><p>22</p><span>HOURS</span></div> :
-                    <div><p>30</p><span>MINS</span></div> :
-                    <div><p>10</p><span>SEC</span></div>
+                    <h2>Similar Items</h2>
                 </div>
                 <div class="browse-arrows">
                     <div class="back-arrow">
@@ -235,12 +189,9 @@
                     </div>
                 </div>
             </div>
-            <div class="flash-sales-prod">
+            <div class="similar-items-prod">
                 <div>
                     <div class="prod-pic">
-                        <div class="discount-ind">
-                            -30%
-                        </div>
                         <img src="./images/dairy&egg.png" alt="">
                         <span><img src="./icons/heart-logo.png" alt=""></span>
                     </div>
@@ -272,9 +223,6 @@
                 </div>
                 <div>
                     <div class="prod-pic">
-                        <div class="discount-ind">
-                            -30%
-                        </div>
                         <img src="./images/meat&sea-food.png" alt="" id="meat">
                         <span><img src="./icons/heart-logo.png" alt=""></span>
                     </div>
@@ -290,47 +238,64 @@
             </div>
         </div>
 
-        <div class="customer-reviews">
-            <h2>Customer Reviews</h2>
-
-            <div class="customers">
-                <div>
-                    <div class="customer-pic">
-                        <img src="./icons/comment-logo (1).png" alt="" id="comment-logo">
-                    <img src="./images/customer-1.png" alt="">
-                    </div>
-                    <div class="customer-info">
-                        <p id="customer-name">Derry Young</p>
-                        <p id="customer-comment">What are you waiting, browse through our hotest category and purchase your healthy groceries from Selmart.</p>
-                    </div>
+        <div class="viewed-items">
+            <div class="top-bar">
+                <div class="heading">
+                    <h2>Recently Viewed Items</h2>
                 </div>
-                <div>
-                    <div class="customer-pic">
-                        <img src="./icons/comment-logo (1).png" alt="" id="comment-logo">
-                    <img src="./images/customer-2.png" alt="">
+                <div class="browse-arrows">
+                    <div class="back-arrow">
+                        <img src="./icons/back-arrow.png" alt="">
                     </div>
-                    <div class="customer-info">
-                        <p id="customer-name">Derry Young</p>
-                        <p id="customer-comment">What are you waiting, browse through our hotest category and purchase your healthy groceries from Selmart.</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="customer-pic">
-                        <img src="./icons/comment-logo (1).png" alt="" id="comment-logo">
-                    <img src="./images/customer-3.png" alt="">
-                    </div>
-                    <div class="customer-info">
-                        <p id="customer-name">Derry Young</p>
-                        <p id="customer-comment">What are you waiting, browse through our hotest category and purchase your healthy groceries from Selmart.</p>
+                    <div class="forward-arrow" id="active">
+                        <img src="./icons/forward-arrow.png" alt="">
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="newsletter">
-            <h1>New to Selmart ?</h1>
-            <p>Subscribe to our newsletter for update on<br>amazing products.</p>
-            <span><input type="text" placeholder="Enter your email"><button>Subscribe</button></span>
+            <div class="viewed-items-prod">
+                <div>
+                    <div class="prod-pic">
+                        <img src="./images/dairy&egg.png" alt="">
+                        <span><img src="./icons/heart-logo.png" alt=""></span>
+                    </div>
+                    <div class="prod-info">
+                        <p id="prod-cat">Meat and Seafood</p>
+                        <p id="prod-name">Colby Jack Cheese (8 oz)</p>
+                    </div>
+                    <div class="prod-price">
+                        <p>GH₵ 25.44</p> <span>GH₵ 55.44</span>
+                    </div>
+                    <button>Add to Cart <img src="./icons/cart-logo.png" alt=""></button>
+                </div>
+                <div>
+                    <div class="prod-pic">
+                        <img src="./images/fresh-product.png" alt="">
+                        <span><img src="./icons/heart-logo.png" alt=""></span>
+                    </div>
+                    <div class="prod-info">
+                        <p id="prod-cat">Fresh Produce</p>
+                        <p id="prod-name">Fresh Mixed Berries</p>
+                    </div>
+                    <div class="prod-price">
+                        <p>GH₵ 25.44</p> <span>GH₵ 55.44</span>
+                    </div>
+                    <button>Add to Cart <img src="./icons/cart-logo.png" alt=""></button>
+                </div>
+                <div>
+                    <div class="prod-pic">
+                        <img src="./images/meat&sea-food.png" alt="" id="meat">
+                        <span><img src="./icons/heart-logo.png" alt=""></span>
+                    </div>
+                    <div class="prod-info">
+                        <p id="prod-cat">Meat and Seafood</p>
+                        <p id="prod-name">Organic Chicken Breast</p>
+                    </div>
+                    <div class="prod-price">
+                        <p>GH₵ 25.44</p> <span>GH₵ 55.44</span>
+                    </div>
+                    <button>Add to Cart <img src="./icons/cart-logo.png" alt=""></button>
+                </div>
+            </div>
         </div>
 
         <div class="footer">
@@ -383,7 +348,5 @@
             </div>
         </div>
     </div>
-
-    <script src="index.js"></script>
 </body>
 </html>

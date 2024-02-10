@@ -1,0 +1,454 @@
+@font-face {
+    font-family: Akshar-Regular;
+    src: url(./Akshar/Akshar-Regular.ttf);
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(./Raleway/Raleway.ttf);
+}
+@font-face {
+    font-family: OpenSans;
+    src: url(./OpenSans/OpenSans.ttf);
+}
+
+:root{
+    --background-color: rgba(255, 255, 255, 1);
+    --white-color: rgba(255, 255, 255, 1);
+    --sel-color: rgba(79, 171, 70, 1);
+    --mart-color: rgba(101, 98, 98, 1);
+    --primary-color: rgba(0, 0, 0, 1);
+    --green-color: rgba(129, 154, 105, 1);
+    --brown-red-color: rgba(231, 121, 96, 1);
+    --light-grey-color: rgba(183, 183, 183, 1);
+    --mart-advert-bg-color: rgba(243, 255, 249, 1);
+    --ash-color: rgba(191, 191, 191, 1);
+    --grey-color: rgba(196, 194, 194, 1);
+    --light-ash-color: rgba(247, 247, 247, 1);
+    --search-box-border-color: rgba(210, 210, 210, 1);
+    --product-bg-color: rgba(84, 84, 84, 1);
+    --product-cat-color: rgba(140, 140, 140, 1);
+    --product-btn-border-color: rgba(126, 126, 126, 1);
+    --offer-time-bg-color: rgba(244, 244, 244, 1);
+    --newsletter-text-color: rgba(88, 88, 88, 1);
+    --footer-bg-color: rgba(246, 250, 255, 1);
+    --deep-ash-color: rgba(88, 88, 88, 1);
+    --prod-nav-btn-color: rgba(109, 109, 109, 1);
+    --free-delivery-border: rgba(158, 158, 158, 1);
+    --shopping-cart-border: rgba(201, 201, 201, 1);
+    --checkout-btn-color: rgba(217, 217, 217, 1);
+    --payment-mode-border: rgba(175, 175, 175, 1);
+    --active-pay-mode-border: rgba(129, 154, 105, 1);
+    --payment-input-border: rgba(82, 82, 82, 1);
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 80vh;
+    background: var(--background-color);
+}
+
+.nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 3px 4px 3px var(--search-box-border-color);
+    padding: 5px 50px;
+}
+
+.nav-sec1{
+    width: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-sec1 p{
+    font-family: Akshar-Regular;
+    font-size: 29.89px;
+    letter-spacing: 2px;
+    color: var(--mart-color);
+}
+
+.nav-sec1 span{
+    color: var(--sel-color);
+}
+
+.nav-sec2{
+    width: 22%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.nav-sec2 a{
+    font-family: Raleway;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 10px;
+}
+
+.nav-sec2 a:hover{
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.nav-sec3{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-box{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border: 2px solid var(--search-box-border-color);
+    border-radius: 40px;
+    font-family: Raleway;
+}
+
+.search-box input{
+    width: 75%;
+    padding: 5px 0;
+    outline: none;
+    border: none;
+}
+
+.search-box button{
+    border-radius: 40px;
+    padding: 8px 20px;
+    border: none;
+    outline: none;
+    background: var(--green-color);
+    font-size: 11.67px;
+    cursor: pointer;
+}
+
+.search-box button a{
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.info{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+.info > div{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.info a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: Raleway;
+}
+
+.checkout{
+    margin: 20px 50px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid var(--search-box-border-color);
+}
+
+.checkout h2{
+    font-family: Raleway;
+}
+
+.order-container{
+    margin: 30px 50px;
+    padding: 10px 30px 10px 10px;
+    min-height: 40vh;
+    box-shadow: 0px 3px 2px 3px var(--search-box-border-color);
+    position: relative;
+    /* border: 2px solid red; */
+    /* display: none; */
+}
+
+.order-heading{
+    display: flex;
+    height: 8vh;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    /* border: 2px solid green; */
+}
+
+.order-number{
+    height: 7vh;
+    border-radius: 143px;
+    display: flex;
+    align-items: center;
+    padding: 0 7px;
+    background: var(--light-ash-color);
+}
+
+.order-number p{
+    font-family: OpenSans;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.order-date{
+    margin-right: 460px;
+}
+
+.order-date p{
+    font-family: OpenSans;
+    font-size: 16px;
+}
+
+.order-heading button{
+    border-radius: 88px;
+    border: 2px solid var(--green-color);
+    color: var(--green-color);
+    font-family: Raleway;
+    font-size: 14px;
+    height: 5vh;
+    width: 9%;
+    background: none;
+    outline: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.ordered-product-box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* border: 2px solid brown; */
+}
+
+.ordered-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 20px; */
+}
+
+.ordered-prod-details{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ordered-prod-pic{
+    background: var(--light-ash-color);
+}
+
+.ordered-prod-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ordered-prod-name p{
+    font-family: Raleway;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.ordered-prod-price p{
+    font-family: OpenSans;
+    font-size: 20px;
+    color: var(--product-btn-border-color);
+    font-weight: 700;
+}
+
+.ordered-prod-price p span{
+    color: var(--brown-red-color);
+    font-size: 25px;
+}
+
+.ordered-prod-cust-name p, .ordered-prod-qty p{
+    font-family: OpenSans;
+    font-size: 18px;
+    color: var(--product-btn-border-color);
+}
+
+.ordered-prod-status, .ordered-prod-expt-date{
+    width: 25%;
+    height: 14vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+    border-left: 1.5px solid var(--prod-nav-btn-color);
+    padding-left: 30px;
+}
+
+.ordered-prod-status p, .ordered-prod-expt-date p{
+    font-family: OpenSans;
+    font-size: 16px;
+    color: var(--prod-nav-btn-color);
+}
+
+.ordered-prod-status h2{
+    font-family: OpenSans;
+    color: var(--green-color);
+}
+
+.ordered-prod-expt-date h2{
+    font-family: OpenSans;
+    color: var(--primary-color);
+}
+
+#meat{
+    width: 212px;
+    height: 212px;
+}
+
+.no-order-yet{
+    margin: 30px 50px;
+    width: 93%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 23%;
+    visibility: hidden;
+    border: 2px solid red;
+}
+
+.no-order-yet h2{
+    font-family: Raleway;
+}
+
+.no-order-yet p{
+    font-family: OpenSans;
+    font-size: 16px;
+    color: var(--prod-nav-btn-color);
+    text-align: center;
+}
+
+.no-order-yet button{
+    border-radius: 88px;
+    border: 2px solid var(--green-color);
+    color: var(--green-color);
+    font-family: Raleway;
+    font-size: 14px;
+    height: 5vh;
+    width: 12%;
+    background: none;
+    outline: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.footer{
+    margin-top: 80px;
+    background: var(--footer-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.selmart-info h2{
+    font-family: Raleway;
+}
+
+.selmart-info p{
+    margin-top: 10px;
+    font-family: OpenSans;
+    font-size: 12px;
+    color: var(--deep-ash-color);
+}
+
+.selmart-socials p{
+    margin-top: 20px;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+.selmart-socials img{
+    width: 20px;
+    height: 20px;
+}
+
+.selmart-socials span{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.our-company p{
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 900;
+    color: var(--primary-color);
+}
+
+.our-company span{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.our-company span a{
+    text-decoration: none;
+    color: var(--deep-ash-color);
+    font-family: OpenSans;
+    font-size: 13px;
+}
+
+.contact h3{
+    font-family: Raleway;
+    font-weight: 900;
+}
+
+.contact address, p{
+    margin-top: 10px;
+    color: var(--deep-ash-color);
+    font-family: OpenSans;
+    font-size: 13px;
+}
+
+.sel-payment h3{
+    font-family: Raleway;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.sel-payment span{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sel-payment a{
+    text-decoration: none;
+    color: var(--deep-ash-color);
+    font-family: OpenSans;
+    font-size: 13px;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Receipt</title>
+    <link rel="stylesheet" href="./emailReceipt.css">
+</head>
+<body>
+    <div class="container">
+        <div class="email-heading">
+            <p>Your Selmart Grocery Order Confirmation</p>
+        </div>
+
+        <div class="order-note-container">
+            <div class="customer-note">
+                <h2>Order Placed Successfully</h2>
+                <p>Dear <span>[Customer's Name],</span><br><br>We're delighted to confirm that your order with Selmart Grocery has been successfully placed. Your satisfaction is our top priority, and we're committed to delivering the best shopping experience.</p><br>
+                <div class="order-details">
+                    <h4>Order Details:</h4>
+                    <p>Order Number: <span>123456789</span></p>
+                    <p>Order Date: <span>[Order Date]</span></p>
+                    <p>Estimated Delivery Date: <span>[Delivery Date]</span></p>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <div class="heading">
+                    <img src="./icons/charm_circle-tick.png" alt="">
+                    <h3>Product Detail</h3>
+                </div>
+                <div class="product-info-list">
+                    <div id=""><p>Item Name</p><span>Fresh Mixed Berries</span></div>
+                    <div id="discount"><p>Discount</p><span>(60%) - GH₵ 5.44</span></div>
+                    <div id=""><p>Quantity</p><span>1</span></div>
+                    <div id="delivery"><p>Delivery</p><span>GH₵ 0.00</span></div>
+                    <div id="taxes"><p>Taxes</p><span>+ GH₵ 2.50</span></div>
+                    <div id="total"><p>Total</p><span>+ GH₵ 20</span></div>
+                </div>
+            </div>
+
+            <div class="delivery-information">
+                <div class="heading">
+                    <img src="./icons/charm_circle-tick.png" alt="">
+                    <h3>Delivery Info</h3>
+                </div>
+                <div class="delivery-information-list">
+                    <div>
+                        <span><h5>Name</h5><p>Kojo Kewa Junior</p></span>
+                        <span><h5>Telephone</h5><p>+1 (555) 123-4567</p></span>
+                    </div>
+                    <div>
+                        <span>
+                            <h5>Address 1</h5><p>123 Main Street,Accra Central,<br>Accra,  Ghana</p>
+                        </span>
+                        <span id="city"><h5>City</h5><p>Accra</p></span>
+                    </div>
+                    <div>
+                        <span>
+                            <h5>Address 2</h5><p>123 Main Street,Accra Central,<br>Accra,  Ghana</p>
+                        </span>
+                        <span><h5>Delivery Date</h5><p>25th Sept 2023</p></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="date-of-arrival">
+                <img src="./icons/carbon_delivery.png" alt="">
+                <p>Estimated Date of arrival<br><span>September 25 -  September 26th</span></p>
+            </div>
+
+            <div class="selmart-regards">
+                <p>Thank you for choosing Selmart Grocery.<br><br>If you have any questions or need assistance, please don't hesitate to contact our support team at [support@selmartgrocery.com].<br>We look forward to serving you again soon. <br><br>Best regards,<br>Selmart Grocery Team.</p>        
+            </div>
+        </div>
+
+        <div class="selmart-copyright">
+            <p>(c) 2023 Selmart. All rights reserved.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
